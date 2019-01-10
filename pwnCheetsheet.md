@@ -1,5 +1,3 @@
-# BASIC
-
 - [BASIC](#basic)
 	- [BufferOverFlow](#bufferoverflow)
 		- [Vunerability](#vunerability)
@@ -20,6 +18,7 @@
 		- [Application](#application-2)
 		- [__free_hook](#freehook)
 
+# BASIC
 
 ## BufferOverFlow
 
@@ -35,7 +34,7 @@
 	}
 	```
 
-	```python
+	```
 	0000| 0x7fffffffdb98 ('1' <repeats 41 times>)
     0008| 0x7fffffffdba0 ('1' <repeats 33 times>)
     0016| 0x7fffffffdba8 ('1' <repeats 25 times>)
@@ -66,9 +65,9 @@
 	```
 	
 	- Find address
-		1. <div class=word>% objdump -M -d shell | less</div>
-		2. <div class=word>gdb-peda$ p shell</div>
-		3. <div class=word>r2$ afl ~shell</div>
+		1. **% objdump** -M -d shell | less</div>
+		2. **gdb-peda$** p shell</div>
+		3. **r2$** afl ~shell</div>
 
 - BOF-ret2Libc
 	- 透過libc不會用到的函式**system, execve**, get_shell
